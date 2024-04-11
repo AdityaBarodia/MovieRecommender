@@ -76,7 +76,7 @@
       <% } }
 	else{
 	  %>
-	  <j1 class="title"> No movies found satisfying all your filters o_O</h1>
+	  <h1 class="title"> No movies found satisfying all your filters o_O</h1>
 	  <% } %>
       </div>
       </div>

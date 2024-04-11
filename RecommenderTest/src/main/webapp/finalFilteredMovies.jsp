@@ -47,6 +47,7 @@
       
 	<%
 		ArrayList<String> filteredMovies = (ArrayList<String>)request.getAttribute("filteredMovies"); 
+	if(filteredMovies.size()!=0){
 	for(int i=0; i<filteredMovies.size(); i++){
   	  String title = MovieDatabase.getTitle(filteredMovies.get(i));
   	  String URL = MovieDatabase.getStoredPoster(filteredMovies.get(i));
@@ -72,7 +73,11 @@
           </div>
         </div>
         
-      <% } %>
+      <% } }
+	else{
+	  %>
+	  <j1 class="title"> No movies found satisfying all your filters o_O</h1>
+	  <% } %>
       </div>
       </div>
 	<script src="RatingPageJS.js" async></script>

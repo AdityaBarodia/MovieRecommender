@@ -167,7 +167,6 @@ public class RecommendationRunner implements Recommender{
     	int filterStatus = 0;
     	AllFilters af = new AllFilters();
     	if(genres != null) {
-    		String genresSelecteD;
     		for(String s : genres) {
     			af.addFilter(new GenreFilter(s));
     		}
